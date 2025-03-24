@@ -1,3 +1,4 @@
+import "./styles.css";
 import { heading, text } from "./pageLoad";
 
 const body = document.querySelector("body");
@@ -9,4 +10,4 @@ const pageLoad = function () {
   content.insertAdjacentHTML("beforeend", text);
 };
 
-body.addEventListener("DOMContentLoaded", pageLoad);
+window.addEventListener("load", pageLoad);
